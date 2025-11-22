@@ -1,12 +1,13 @@
 {
-    "name" : "product-services",
-    "version" : "1.0.0",
-    "description" : "Microservices for product management",
-    "main" : "app.js",
-    "scripts" : {
-        "start" : "node app.js"
+    "name": "product-services",
+    "version": "1.0.0",
+    "description": "Microservices for product management",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
     },
-    "dependencies" : {
-        "express" : "^4.19.2"
+    "dependencies": {
+        "axios": "^1.13.2",
+        "express": "^4.19.2"
     }
 }

@@ -1,10 +1,29 @@
 version: '3.9'
-
 services:
   product-service:
     build: ./product-services
     ports:
       - "3000:3000"
-    container_name: product-service
+    container_name: product-services
     restart: always
-    
+  
+  cart-service:
+    build: ./cart-services
+    ports:
+      - "8000:8000"
+    container_name: cart-services
+    restart: always
+
+  review-service:
+    build: ./review-services
+    ports:
+      - "5002:5002"
+    container_name: review-services
+    restart: always
+
+  user-service:
+    build: ./user-services
+    ports:
+      - "4000:4000"
+    container_name: user-services
+    restart: always

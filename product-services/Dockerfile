@@ -1,19 +1,19 @@
-#gunakan imag nod js versi 18
+#gunakan image nod js versi 18
 FROM node:18-alpine
 
-#set working directory dialam container
+#set working directory di dalam container
 WORKDIR /app
 
-#copy file package.json ke working directory
+#copy file package.json ke dalam container
 COPY package.json . /app/
 
 #install dependencies
-RUN npm install
+RUN npm install 
 
-#copy semua file ke container
-COPY . . 
+#copy semua file ke dalam container
+COPY . .
 
-#expose port 3000
+#expose port 3000 (agar bisa di akses dari luar container)
 EXPOSE 3000
 
 #jalankan aplikasi
